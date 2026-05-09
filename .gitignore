@@ -3,3 +3,6 @@
 backups/
 .DS_Store
 Thumbs.db
+# Database & Exports
+data/referrals.db
+*.csv
