@@ -160,18 +160,27 @@
   </footer>
 
 
+
 <!-- Referral Modal -->
 <div id="referralModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:9999;align-items:center;justify-content:center;">
-  <div style="background:#fff;padding:32px;border-radius:16px;max-width:420px;width:90%;box-shadow:0 12px 40px rgba(0,0,0,0.2);position:relative;">
-    <h3 style="margin-bottom:16px;color:#0A5C5C;">Are you referred by an agent?</h3>
+  <div style="background:#fff;padding:32px;border-radius:16px;max-width:440px;width:90%;box-shadow:0 12px 40px rgba(0,0,0,0.2);position:relative;">
+    <h3 style="margin-bottom:12px;color:#0A5C5C;">Were you referred by an agent?</h3>
+    <p style="font-size:14px;color:#555;margin-bottom:20px;">If yes, please provide the <strong>referring agent's</strong> contact information below.</p>
+    
     <div id="referralChoice" style="display:flex;gap:12px;margin-bottom:20px;">
       <button id="refNo" style="flex:1;padding:12px;background:#0A2540;color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer;">No, continue</button>
       <button id="refYes" style="flex:1;padding:12px;background:#D4A853;color:#0A2540;border:none;border-radius:8px;font-weight:600;cursor:pointer;">Yes, I was referred</button>
     </div>
+    
     <form id="refForm" style="display:none;">
-      <input id="refName" type="text" placeholder="Full Name" required style="width:100%;padding:10px;margin-bottom:10px;border:1px solid #ccc;border-radius:6px;">
-      <input id="refEmail" type="email" placeholder="Email Address" required style="width:100%;padding:10px;margin-bottom:10px;border:1px solid #ccc;border-radius:6px;">
-      <input id="refPhone" type="tel" placeholder="Phone Number" required style="width:100%;padding:10px;margin-bottom:16px;border:1px solid #ccc;border-radius:6px;">
+      <input id="refName" type="text" placeholder="Agent's Full Name" required style="width:100%;padding:10px;margin-bottom:10px;border:1px solid #ccc;border-radius:6px;">
+      <input id="refEmail" type="email" placeholder="Agent's Email Address" required style="width:100%;padding:10px;margin-bottom:10px;border:1px solid #ccc;border-radius:6px;">
+      <input id="refPhone" type="tel" placeholder="Agent's Phone Number" required style="width:100%;padding:10px;margin-bottom:8px;border:1px solid #ccc;border-radius:6px;">
+      
+      <p style="font-size:12px;color:#666;margin-bottom:16px;line-height:1.4;background:#f8f9fa;padding:10px;border-radius:6px;border-left:3px solid #0A5C5C;">
+        ⚠️ <strong>Please note:</strong> These fields are for the <strong>referring agent's details only</strong>, not your personal information. This helps us properly credit the agent who referred you.
+      </p>
+      
       <button type="submit" style="width:100%;padding:12px;background:#0A5C5C;color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer;">Submit & Continue</button>
     </form>
     <p id="refStatus" style="margin-top:12px;font-size:13px;color:#666;text-align:center;"></p>
@@ -205,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   form.addEventListener('submit', async e => {
     e.preventDefault();
-    status.textContent = 'Saving...';
+    status.textContent = 'Saving agent details...';
     const payload = {
       name: document.getElementById('refName').value,
       email: document.getElementById('refEmail').value,
@@ -220,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       const data = await res.json();
       if (data.success) {
-        status.textContent = '✅ Saved! Redirecting...';
+        status.textContent = '✅ Agent credited! Redirecting...';
         setTimeout(() => window.location.href = targetUrl, 800);
       } else {
         status.textContent = '❌ Error saving data. Please try again.';
