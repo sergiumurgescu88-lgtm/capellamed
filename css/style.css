@@ -745,3 +745,9 @@ img[src*="gary-team"] {
 .carrier-grid { display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; margin-top: 1rem; }
 .carrier-grid img { height: 40px; width: auto; object-fit: contain; filter: grayscale(100%); transition: filter 0.3s; }
 .carrier-grid img:hover { filter: grayscale(0%); }
+
+/* 🎨 CapellaMed Logo Professional */
+.navbar-brand { padding: 0.5rem 0; line-height: 1; }
+.logo { max-height: 60px; width: auto; object-fit: contain; transition: transform 0.2s; }
+.logo:hover { transform: scale(1.01); }
+@media (max-width: 768px) { .logo { max-height: 45px; } }
