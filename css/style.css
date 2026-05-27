@@ -947,3 +947,20 @@ small, .small, .fine-print, .disclaimer, .legal, .copyright,
     h1 { font-size: 34px !important; }
     .cta-btn, .btn, button { font-size: 22px !important; padding: 14px 28px !important; }
 }
+
+/* 🔧 CapellaMed: Mobile Logo Fix (Blochează scalarea aiurea) */
+@media (max-width: 768px) {
+    a.logo img, .site-logo, .navbar-brand img, header img.logo, nav img.logo {
+        max-height: 42px !important;
+        max-width: 160px !important;
+        width: auto !important;
+        height: auto !important;
+        object-fit: contain !important;
+        display: block !important;
+    }
+    a.logo, .navbar-brand {
+        padding: 0 !important;
+        margin: 0 !important;
+        line-height: 1 !important;
+    }
+}
