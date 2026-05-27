@@ -809,3 +809,31 @@ h2, h3, h4, .subtitle, .section-subtitle, .hero-subtitle, .page-subtitle, .card 
     body, p, li, .nav-links a, .dropdown a, input, textarea { font-size: 1.15rem !important; }
     h2, h3, .subtitle { font-size: 1.4rem !important; }
 }
+
+/* 🔍 CapellaMed: REAL Font Size Increase (Senior Optimized, Tight Spacing) */
+body, p, li, td, th, label, span, .card p, .feature-list li, .content p, .description, .text-block, .faq-answer, .step-text, .hero-text, .hero p, section p, article p {
+    font-size: 1.25rem !important; /* ~20px */
+    line-height: 1.48 !important; /* Strâns ca să nu creeze spații albe */
+}
+h2, h3, h4, .subtitle, .section-subtitle, .hero-subtitle, .page-subtitle, .card h3, .section-title {
+    font-size: 1.6rem !important; /* ~25.6px */
+    line-height: 1.38 !important;
+    margin-bottom: 0.7rem !important;
+}
+.nav-links a, .dropdown a, .top-bar a, .nav-inner a, .menu-link, .nav-item a, .header-phone {
+    font-size: 1.2rem !important; /* ~19.2px */
+    padding: 0.5rem 0.8rem !important;
+}
+.cta-btn, .btn, button, input[type="submit"], .booking-premium, .nav-explore-btn {
+    font-size: 1.3rem !important; /* ~20.8px */
+    padding: 0.85rem 1.8rem !important;
+    min-height: 48px !important;
+}
+footer p, footer a, .footer-bottom, .copyright, .footer-links a {
+    font-size: 1.15rem !important; /* ~18.4px */
+    line-height: 1.48 !important;
+}
+@media (max-width: 768px) {
+    body, p, li, .nav-links a, .dropdown a, input, textarea { font-size: 1.15rem !important; }
+    h2, h3, .subtitle { font-size: 1.45rem !important; }
+}
