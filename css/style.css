@@ -891,3 +891,59 @@ body .cta-btn, body .btn, body button, body input[type="submit"] {
     body p, body li, body .nav-links a, body input, body textarea { font-size: 22px !important; }
     body h2, body h3, body .subtitle { font-size: 28px !important; }
 }
+
+/* 🔍 CapellaMed: GLOBAL SENIOR TEXT OVERRIDE (+3 sizes, forced px, zero exceptions) */
+html { font-size: 20px !important; }
+body, p, li, td, th, label, span, a, h2, h3, h4, h5, h6, 
+.card, .hero, .content, .description, .text, .info, .detail, 
+.faq, .step, .subtitle, .meta, .note, .disclaimer, .legal, 
+.small, small, .fine-print, .copyright, .footer-text, .header-text, 
+.nav-text, .menu-text, .dropdown-text, .btn-text, .cta-text, 
+.form-text, .input-text, .label-text, .hint-text, .error-text, 
+.success-text, .warning-text, .alert-text, .message-text, 
+.modal-text, .popup-text, .badge, .tag, .price, .cost, .date, 
+.time, .author, .client, .review, .testimonial, .quote, .caption, 
+.figcaption, .breadcrumb, .pagination, .tab, .accordion, .toggle, 
+.details, .summary, .widget, .sidebar, .main-content, .article-content, 
+.section-content, .container-text, .wrapper-text, .inner-text {
+    font-size: 24px !important;
+    line-height: 1.42 !important;
+    letter-spacing: 0.2px !important;
+}
+h2, h3, h4, h5, h6, .section-title, .card-title, .hero-title, 
+.page-title, .block-title, .widget-title, .sidebar-title, 
+.footer-title, .header-title, .nav-title, .menu-title, 
+.dropdown-title, .accordion-title, .toggle-title, .details-title, 
+.summary-title, .tab-title, .pagination-title, .breadcrumb-title {
+    font-size: 30px !important;
+    line-height: 1.35 !important;
+    margin-bottom: 0.6rem !important;
+}
+h1 { font-size: 38px !important; line-height: 1.28 !important; }
+nav a, .nav-links a, .dropdown a, .top-bar a, .menu a, 
+.footer a, .footer-links a, .breadcrumb a, .pagination a, 
+.tab a, .accordion a, .toggle a, .details a, .summary a, 
+.widget a, .sidebar a, .main a, .article a, .section a {
+    font-size: 22px !important;
+}
+.cta-btn, .btn, button, input[type="submit"], input[type="button"], 
+.booking-premium, .nav-explore-btn {
+    font-size: 24px !important;
+    padding: 16px 32px !important;
+    min-height: 60px !important;
+}
+input, textarea, select, .form-control {
+    font-size: 22px !important;
+    padding: 14px 18px !important;
+}
+small, .small, .fine-print, .disclaimer, .legal, .copyright, 
+.meta, .note, .hint, .label, .badge, .tag {
+    font-size: 20px !important;
+}
+@media (max-width: 768px) {
+    html { font-size: 18px !important; }
+    body, p, li, a, span, label { font-size: 22px !important; }
+    h2, h3, h4, h5, h6 { font-size: 28px !important; }
+    h1 { font-size: 34px !important; }
+    .cta-btn, .btn, button { font-size: 22px !important; padding: 14px 28px !important; }
+}
