@@ -756,3 +756,36 @@ img[src*="gary-team"] {
 a.logo { display: flex !important; align-items: center !important; text-decoration: none !important; }
 a.logo img.site-logo { max-height: 55px !important; width: auto !important; display: block !important; }
 @media (max-width: 768px) { a.logo img.site-logo { max-height: 42px !important; } }
+
+/* 🔍 CapellaMed: Senior-Friendly Font Scaling & Accessibility */
+body, p, li, td, th, label, .card p, .feature-list li, .content p, .description, .text-block, .faq-answer, .step-text, .hero-text {
+    font-size: 1.15rem !important;
+    line-height: 1.65 !important;
+}
+h2, h3, .subtitle, .section-subtitle, .hero-subtitle, .page-subtitle, .card h3, .section-title {
+    font-size: 1.4rem !important;
+    line-height: 1.45 !important;
+    margin-bottom: 0.8rem !important;
+}
+.nav-links a, .dropdown a, .nav-inner a, .top-bar a, .navbar a, .menu-link, .nav-item a {
+    font-size: 1.15rem !important;
+    padding: 0.5rem 0.8rem !important;
+}
+.cta-btn, .btn, button, input[type="submit"], .booking-premium, .nav-explore-btn {
+    font-size: 1.2rem !important;
+    padding: 0.9rem 1.6rem !important;
+    min-height: 48px !important;
+}
+footer p, footer a, .footer-links a, .footer-bottom, .copyright {
+    font-size: 1.05rem !important;
+    line-height: 1.6 !important;
+}
+input, textarea, select {
+    font-size: 1.1rem !important;
+    padding: 0.7rem !important;
+}
+@media (max-width: 768px) {
+    body, p, li, .card p { font-size: 1.1rem !important; }
+    h2, h3, .subtitle { font-size: 1.3rem !important; }
+    .nav-links a, .dropdown a { font-size: 1.05rem !important; }
+}
