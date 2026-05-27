@@ -734,3 +734,14 @@ img[src*="gary-team"] {
 .hero .subtitle, .hero-subtitle { font-size: 1.3rem !important; line-height: 1.5; }
 .card p, .card h3, .service-card p { font-size: 1.05rem !important; }
 .feature-list li, .problem-list li, .hero-features li { font-size: 1.1rem !important; margin-bottom: 0.6rem; }
+
+/* 🔤 CapellaMed: Fonturi mărite conform cerințelor */
+.top-bar a, .logo, .navbar-brand, .header-phone { font-size: 1.2rem !important; font-weight: 600; }
+.hero .subtitle, .hero-subtitle, .page-subtitle { font-size: 1.35rem !important; line-height: 1.5; }
+.card p, .card h3, .service-card p, .info-card p { font-size: 1.08rem !important; }
+.feature-list li, .problem-list li, .hero-features li, .concerns-list li { font-size: 1.15rem !important; margin-bottom: 0.7rem; }
+
+/* 🖼️ Grid Carrieri (Logo-uri) */
+.carrier-grid { display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; margin-top: 1rem; }
+.carrier-grid img { height: 40px; width: auto; object-fit: contain; filter: grayscale(100%); transition: filter 0.3s; }
+.carrier-grid img:hover { filter: grayscale(0%); }
