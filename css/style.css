@@ -864,3 +864,30 @@ body .cta-btn, body .btn, body button, body input[type="submit"] {
     body p, body li, body .nav-links a, body input, body textarea { font-size: 22px !important; }
     body h2, body h3, body .subtitle { font-size: 28px !important; }
 }
+
+/* 🔍 CapellaMed: FORCED Senior Font Scaling (+3 sizes, tight spacing, max specificity) */
+body p, body li, body td, body th, body label, body span, 
+body .card p, body .content p, body .description, body .text-block, 
+body .faq-answer, body .step-text, body .hero p, body section p, 
+body article p, body .hero-text, body .subtitle, body .hero-subtitle, 
+body .page-subtitle, body .section-description, body .nav-links a, 
+body .dropdown a, body .top-bar a, body footer p, body footer a, 
+body input, body textarea, body select {
+    font-size: 24px !important;
+    line-height: 1.32 !important;
+    letter-spacing: 0.2px !important;
+}
+body h2, body h3, body h4, body .section-title, body .card h3 {
+    font-size: 30px !important;
+    line-height: 1.28 !important;
+    margin-bottom: 0.5rem !important;
+}
+body .cta-btn, body .btn, body button, body input[type="submit"] {
+    font-size: 24px !important;
+    padding: 16px 32px !important;
+    min-height: 60px !important;
+}
+@media (max-width: 768px) {
+    body p, body li, body .nav-links a, body input, body textarea { font-size: 22px !important; }
+    body h2, body h3, body .subtitle { font-size: 28px !important; }
+}
