@@ -1,4 +1,4 @@
-/* ===== CAPELAMED - Main Stylesheet ===== */
+/* ===== CapellaMed - Main Stylesheet ===== */
 :root {
     --primary-teal: #0A5C5C;
     --dark-navy: #0A2540;
@@ -728,3 +728,9 @@ img[src*="gary-team"] {
     margin: 8px 0;
   }
 }
+
+/* 🎨 CapellaMed Rebranding: Visual & Typography Overrides */
+.top-bar a, .logo, .navbar-brand { font-size: 1.15rem !important; font-weight: 600; }
+.hero .subtitle, .hero-subtitle { font-size: 1.3rem !important; line-height: 1.5; }
+.card p, .card h3, .service-card p { font-size: 1.05rem !important; }
+.feature-list li, .problem-list li, .hero-features li { font-size: 1.1rem !important; margin-bottom: 0.6rem; }
