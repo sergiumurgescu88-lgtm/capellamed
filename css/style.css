@@ -789,3 +789,23 @@ input, textarea, select {
     h2, h3, .subtitle { font-size: 1.3rem !important; }
     .nav-links a, .dropdown a { font-size: 1.05rem !important; }
 }
+
+/* 🔍 CapellaMed: Global +2 Font Size Increase (Senior Optimized) */
+body, p, li, td, th, label, span, .card p, .feature-list li, .content p, .description, .text-block, .faq-answer, .step-text, .hero-text, .nav-links a, .dropdown a, .top-bar a, .nav-inner a, footer p, footer a, .footer-links a, input, textarea, select {
+    font-size: 1.25rem !important; /* ~20px */
+    line-height: 1.7 !important;
+}
+h2, h3, h4, .subtitle, .section-subtitle, .hero-subtitle, .page-subtitle, .card h3, .section-title {
+    font-size: 1.6rem !important; /* ~25.6px */
+    line-height: 1.5 !important;
+    margin-bottom: 1rem !important;
+}
+.cta-btn, .btn, button, input[type="submit"], .booking-premium, .nav-explore-btn {
+    font-size: 1.35rem !important;
+    padding: 1rem 2rem !important;
+    min-height: 54px !important;
+}
+@media (max-width: 768px) {
+    body, p, li, .nav-links a, .dropdown a, input, textarea { font-size: 1.15rem !important; }
+    h2, h3, .subtitle { font-size: 1.4rem !important; }
+}
